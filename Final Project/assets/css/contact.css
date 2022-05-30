@@ -13,17 +13,19 @@ body {
   font-size: 16px; }
 
 main section .contact-us {
-  background-image: url(/assets/image/blog-page/bg.jpg);
+  background-image: url(/assets/image/blog-page/bg.jpeg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-bottom: 0; }
   main section .contact-us .contact-title {
     padding: 55px 0 60px;
     text-align: center;
     font-size: 16px;
     line-height: 1;
     letter-spacing: 0.5px;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    margin-bottom: 100px; }
     main section .contact-us .contact-title h2 {
       font-size: 24px;
       padding-bottom: 15px;

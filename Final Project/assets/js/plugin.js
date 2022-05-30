@@ -13,21 +13,6 @@
 // 	};
 //   };
 
-// const product = document.getElementsByClassName(".product-wrapper-img");
-// const img = document.getElementsByTagName("img");
-// product.addEventListener("mousemove", onZoom);
-// product.addEventListener("mouseover", onZoom);
-// product.addEventListener("mouseleave", offZoom);
-// function onZoom(e) {
-//     const x = e.clientX - e.target.offsetLeft;
-//     const y = e.clientY - e.target.offsetTop;
-//     img.style.transformOrigin = `${x}px ${y}px`;
-//     img.style.transform = "scale(2.5)";
-// }
-// function offZoom(e) {
-//     img.style.transformOrigin = `center center`;
-//     img.style.transform = "scale(1)";
-// }
 
 
 
@@ -140,20 +125,55 @@ productList ();
 
 
 
-		// <li class="custom-li">
-		// 	<div class="canvas-image">
-		// 		<a href="product-details.html">
-		// 			<img src="${item.item.img}" alt="">
-		// 		</a>
-		// 	</div>
-		// 	<div class="canvas-img-title">
-		// 		<h3 class="pro-text">
-		// 			<a class="text" href="product-details.html">${item.item.title}</a>
-		// 		</h3>
-		// 		<p class="card-pro">
-		// 			<span class="card-quantity">${item.count}<b>×</b></span>
-		// 			<span class="card-price2">${item.item.price}</span>
-		// 		</p>
-		// 	</div>
-		// 	<button class="btn-xmark"> <i class="fa-solid fa-xmark"></i></button>
-		// </li>
+$(document).ready(function(){
+
+    $(".product-mini-img img").click(function(){
+        console.log("ok")
+        var image = $(this).attr("src");
+        $(".product-wrapper-img img").attr("src",image);
+    })
+});
+
+
+
+
+$(".product-wrapper-img")
+.on("mouseover", function() {
+  $(this)
+    .children("img")
+    .css({ transform: "scale(" + $(this).attr("data-scale") + ")" });
+})
+.on("mouseout", function() {
+  $(this)
+    .children("img")
+    .css({ transform: "scale(1)" });
+})
+.on("mousemove", function(e) {
+  $(this)
+    .children("img")
+    .css({
+      "transform-origin":
+        ((e.pageX - $(this).offset().left) / $(this).width()) * 100 +
+        "% " +
+        ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +
+        "%"
+    });
+});
+
+
+
+// const product = document.getElementsByClassName(".product-wrapper-img");
+// const img = document.getElementsByTagName("img");
+// product.addEventListener("mousemove", onZoom);
+// product.addEventListener("mouseover", onZoom);
+// product.addEventListener("mouseleave", offZoom);
+// function onZoom(e) {
+//     const x = e.clientX - e.target.offsetLeft;
+//     const y = e.clientY - e.target.offsetTop;
+//     img.style.transformOrigin = `${x}px ${y}px`;
+//     img.style.transform = "scale(2.5)";
+// }
+// function offZoom(e) {
+//     img.style.transformOrigin = `center center`;
+//     img.style.transform = "scale(1)";
+// }

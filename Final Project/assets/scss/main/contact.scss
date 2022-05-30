@@ -15,10 +15,11 @@ body{
 main{
     section{        
         .contact-us{
-            background-image: url(Final\ Project/assets/image/blog-page/bg.jpg);
+            background-image: url(/assets/image/blog-page/bg.jpeg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            margin-bottom: 0;
             .contact-title{
                 padding: 55px 0 60px;
                 text-align: center;
@@ -26,6 +27,7 @@ main{
                 line-height: 1;
                 letter-spacing: 0.5px;
                 text-transform: capitalize;
+                margin-bottom: 100px;
                 h2{
                     font-size: 24px;
                     padding-bottom: 15px;

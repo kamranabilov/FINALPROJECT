@@ -11,6 +11,219 @@ body {
     font-weight: 400;
     line-height: 1.7;
     font-size: 16px;
+
+    .modal{
+        width: 1000px !important;
+        left: 250px;
+        top: 60px;
+        max-height: 90% !important;
+        transition: 0.4s linear;
+        .modal-dialog{
+            max-width: 890px;
+            width: 1000px;
+        }
+        .modal-content{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 90% !important;
+            background-color: #fff;
+            border: 1px solid #333;
+            border-radius: 20px;
+            .modal-body{
+                left: 280px;
+                padding: 20px;
+                z-index: 9999;
+                .btn-close{
+                    left: 0;
+                    position: absolute;
+                    margin-left: 480px;
+                    top: 20px;
+                }
+                .product-details-wrapper{
+                    margin-left: -280px;
+                    cursor: pointer;
+                    .product-wrapper-img{
+                        margin-bottom: 20px;
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                        display: block;
+                        width: 300px !important;
+                        cursor: pointer;
+                        img{
+                            width: 100% !important;
+                            border: 1px solid #ededed;
+                        }
+                    }
+                    .product-mini-img{
+                        width: 320px !important;
+                        display: flex;
+                        gap: 10px;
+                        cursor: pointer;
+                        img{
+                            width: 70px !important;
+                            border: 1px solid #ededed;
+                        }
+                    }
+                    .product-details-desc{
+                        position: absolute;
+                        left: 100px !important;
+                        z-index: -1;
+                        margin: 0;
+                        padding: 0;
+                        h3{
+                            font-size: 24px;
+                            font-weight: 500;
+                            color: #333;
+                            letter-spacing: 1px;
+                            padding-bottom: 10px;
+                            text-transform: capitalize;
+                        }
+                        .review{
+                            span{
+                                a{
+                                    color: #e3a51e;
+                                    font-size: 14px;
+                                    text-decoration: none;
+                                    background-color: transparent;
+                                }
+                            }
+                        }
+                        .price{
+                            padding-top: 10px;
+                            padding-bottom: 0;
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: #333;
+                            line-height: 1;
+                            del{
+                                text-decoration: line-through;
+                            }
+                        }
+                        .quantity {
+                            display: flex;             
+                            align-items: center;
+                            margin-right: 15px;
+                            margin-bottom: 20px;
+                            cursor: pointer;
+                           .mini-pro{
+                                width: 90px;
+                                height: 46px;
+                                border: 1px solid #ddd;
+                                padding: 0 15px;
+                                float: left;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                span{
+                                    width: 15px;
+                                    display: block;
+                                    float: left;
+                                    line-height: 46px;
+                                    cursor: pointer;
+                                    text-align: center;
+                                    font-size: 22px;
+                                    color: #666666;
+                                }
+                                input{
+                                    border: none;
+                                    outline: none;
+                                    float: left;
+                                    width: 28px;
+                                    height: 46px;
+                                    padding: 0;
+                                    text-align: center;
+                                    background-color: transparent;
+                                }
+                           }
+                           .btn{
+                                text-decoration: none;
+                                border-radius: 4px;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 1;
+                                color: #e3a51e;
+                                outline: none;
+                                display: inline-block;
+                                padding: 14px 25px;
+                                background-color: #333;
+                                text-transform: uppercase;
+                                margin-left: 12px;
+                                cursor: pointer;
+                           }
+                           .btn:hover{
+                               background-color: #e3a51e;
+                               color: #fff;
+                               transition: 0.3s linear;
+                           }
+                        }
+                        .stock{
+                            display: flex;
+                            align-items: center; 
+                            margin-top: 24px; 
+                            cursor: pointer;
+                            h5{
+                                font-weight: 500;
+                                color: #333;
+                                font-size: 18px;
+                                line-height: 1;
+                                margin-right: 10px;
+                                letter-spacing: 1px;
+                            }
+                            span{
+                                color: #22dd77;
+                                font-size: 14px;
+                                padding-left: 3px;
+                            }          
+                        }
+                        .share-icon{
+                            display: flex;
+                            align-items: center;
+                            h5{
+                                font-size: 14px;
+                                line-height: 1;
+                                margin-right: 10px;
+                                font-weight: 600;
+                                color: #333;
+                                letter-spacing: 1px;
+                            }
+                            a{
+                                text-decoration: none;
+                                margin-right: 6px;
+                                border: 1px solid #e5e5e5;
+                                padding: 0 8px;
+                                font-size: 16px;
+                                line-height: 36px;
+                                display: inline-block;
+                                align-items: center;width: 36px;
+                                height: 36px;
+                                color: #666;
+                                i{
+                                    color: #666;
+                                }
+                            }
+                            a:hover{
+                                background-color: #e3a51e;
+                                color: #fff;
+                                transition: 0.3s linear;
+                            }
+                        }
+                        p{
+                            width: 60% !important;
+                            z-index: -1;
+                            padding-top: 15px;
+                            padding-bottom: 20px;
+                        }
+                    }
+                }
+            }
+            .modal-header{
+                display: none;
+            }
+        }
+    }
 }
 html{
     scroll-behavior: smooth;
@@ -1202,9 +1415,24 @@ main {
                     left: 0;
                     padding-left: 95px;
                     color: #e3a51e;
+                    .btn{
+                        text-decoration: none;
+                        color: #e3a51e;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        border: none;
+                        outline: none;
+                        font-size: 22px;
+                    }
+                    .btn:hover {
+                        background-color: #e3a51e;
+                        color: #fff;
+                        border-radius: 50%;
+                    }
                     a {
                         text-decoration: none;
                         color: #e3a51e;
+                        background-color: #fff;
                         border-radius: 50%;
                         .custom-modal{
                             display: none;
@@ -1289,6 +1517,7 @@ main {
     .seller {
         .custom-container {
             .custom-seller-row {
+                z-index: 99;
                 .seller-title {
                     padding-bottom: 42px;
                     text-align: center;

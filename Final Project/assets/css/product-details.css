@@ -25,10 +25,6 @@ body {
       height: 100%;
       width: 100%;
       border: 1px solid #ededed; }
-    .product-details .product-details-wrapper .product-wrapper-img img:hover {
-      transform: scaleY(1.2);
-      transition: 0.3s linear;
-      cursor: e-resize; }
   .product-details .product-details-wrapper .product-mini-img {
     gap: 15px;
     overflow: hidden; }
@@ -36,10 +32,6 @@ body {
       overflow: hidden; }
       .product-details .product-details-wrapper .product-mini-img .mini-img img {
         border: 1px solid #ededed; }
-      .product-details .product-details-wrapper .product-mini-img .mini-img img:hover {
-        transform: scaleY(1.2);
-        cursor: e-resize;
-        transition: 0.3s linear; }
   .product-details .product-details-wrapper .product-details-desc {
     padding-left: 50px; }
     .product-details .product-details-wrapper .product-details-desc h3 {

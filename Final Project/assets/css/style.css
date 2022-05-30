@@ -100,6 +100,9 @@ html {
     pointer-events: visible;
     z-index: 999;
     transition: 0.2s ease-in-out; }
+  @media (max-width: 1007px) {
+    .header .header-top {
+      display: none; } }
 
 .header .header-second .container .welcome2 .menu ul li a {
   padding: 30px 15px; }
@@ -261,6 +264,9 @@ html {
     pointer-events: visible;
     z-index: 999;
     transition: 0.2s ease-in-out; }
+  @media (max-width: 1007px) {
+    .header .header-second .container .welcome2 .r-right .menu .all-menu ul {
+      display: none; } }
 
 .header .header-second .container .welcome2 .end-cart {
   position: relative;
@@ -438,82 +444,85 @@ html {
                   height: 100%;
                   padding-right: 30px;
                   margin-right: -15px; }
-                  .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li {
-                    display: flex;
-                    flex-wrap: wrap;
-                    padding-bottom: 20px;
-                    margin-bottom: 20px;
-                    margin-left: -32px;
-                    border-bottom: 1px solid #e5e5e5; }
-                    .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-image {
-                      flex-basis: 85px;
-                      border: 1px solid #dfdede;
-                      width: 85px;
-                      height: 91px; }
-                      .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-image a {
-                        text-decoration: none; }
-                        .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-image a img {
-                          max-width: 100%; }
-                    .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-img-title {
-                      padding: 0 10px;
-                      max-width: calc(100% - 115px);
-                      flex-basis: calc(100% - 115px); }
-                      .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-img-title .pro-text {
-                        font-size: 14px;
-                        font-weight: 400;
-                        line-height: 1;
-                        letter-spacing: 1px;
-                        padding-bottom: 10px;
-                        color: #333;
-                        text-transform: capitalize; }
-                        .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-img-title .pro-text .text {
-                          text-decoration: none;
-                          color: #333;
-                          font-weight: 400;
-                          font-size: 15px;
-                          line-height: 1.5;
-                          background-color: transparent; }
-                      .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-img-title .card-pro {
-                        display: flex;
-                        background-color: transparent; }
-                        .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-img-title .card-pro .card-quantity {
-                          font-size: 12px;
-                          color: #666666;
-                          line-height: 1;
-                          top: 120px;
-                          left: 120px;
-                          background-color: transparent;
-                          display: flex;
-                          gap: 5px; }
-                          .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-img-title .card-pro .card-quantity b {
-                            font-size: 16px;
-                            font-weight: 400;
-                            vertical-align: text-bottom; }
-                        .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-img-title .card-pro .card-price2 {
-                          color: #e3a51e;
+                  .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item {
+                    overflow-y: scroll;
+                    max-height: 350px; }
+                    .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li {
+                      display: flex;
+                      flex-wrap: wrap;
+                      padding-bottom: 20px;
+                      margin-bottom: 20px;
+                      margin-left: -32px;
+                      border-bottom: 1px solid #e5e5e5; }
+                      .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-image {
+                        flex-basis: 85px;
+                        border: 1px solid #dfdede;
+                        width: 85px;
+                        height: 91px; }
+                        .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-image a {
+                          text-decoration: none; }
+                          .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-image a img {
+                            max-width: 100%; }
+                      .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-img-title {
+                        padding: 0 10px;
+                        max-width: calc(100% - 115px);
+                        flex-basis: calc(100% - 115px); }
+                        .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-img-title .pro-text {
                           font-size: 14px;
-                          font-weight: 500;
+                          font-weight: 400;
                           line-height: 1;
-                          top: 119px;
-                          background-color: transparent;
-                          left: 100px;
-                          padding-left: 10px; }
-                    .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .btn-xmark {
-                      background-color: transparent;
-                      border: none;
-                      cursor: pointer;
-                      outline: none;
-                      padding: 0;
-                      flex-basis: 30px;
-                      text-align: center;
-                      font-size: 18px;
-                      line-height: 1;
-                      color: #333333;
-                      max-width: 30px; }
+                          letter-spacing: 1px;
+                          padding-bottom: 10px;
+                          color: #333;
+                          text-transform: capitalize; }
+                          .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-img-title .pro-text .text {
+                            text-decoration: none;
+                            color: #333;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 1.5;
+                            background-color: transparent; }
+                        .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-img-title .card-pro {
+                          display: flex;
+                          background-color: transparent; }
+                          .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-img-title .card-pro .card-quantity {
+                            font-size: 12px;
+                            color: #666666;
+                            line-height: 1;
+                            top: 120px;
+                            left: 120px;
+                            background-color: transparent;
+                            display: flex;
+                            gap: 5px; }
+                            .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-img-title .card-pro .card-quantity b {
+                              font-size: 16px;
+                              font-weight: 400;
+                              vertical-align: text-bottom; }
+                          .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .canvas-img-title .card-pro .card-price2 {
+                            color: #e3a51e;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 1;
+                            top: 119px;
+                            background-color: transparent;
+                            left: 100px;
+                            padding-left: 10px; }
+                      .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-item .custom-ul .custom-li .btn-xmark {
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                        outline: none;
+                        padding: 0;
+                        flex-basis: 30px;
+                        text-align: center;
+                        font-size: 18px;
+                        line-height: 1;
+                        color: #333333;
+                        max-width: 30px; }
                   .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-price-box {
                     padding-bottom: 20px;
-                    margin-bottom: 20px;
-                    padding-top: 15px;
+                    margin-bottom: -25px;
+                    padding-top: 27px;
                     margin-left: -45px; }
                     .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart li .custom-canvas-end .custom-offcanvas .canvas-wrapper .canvas-mini .canvas-cart .canvas-content .canvas-box .canvas-price-box ul li {
                       display: flex;
@@ -596,6 +605,9 @@ html {
         opacity: 1;
         visibility: visible;
         transform: none; }
+      @media (max-width: 1007px) {
+        .header .header-second .container .welcome2 .end-cart .header-cart .cart-area .nav-cart {
+          display: none; } }
 
 .header .sticky {
   top: 0;
@@ -652,34 +664,34 @@ html {
             display: none; }
           .header .header-second .custom-container .end-cart .header-cart .cart-area .nav-cart .cart-hover a i {
             display: none; } }
-  @media screen and (max-width: 768px) and (max-width: 768px) and (max-width: 768px) {
-    .header .hamburger {
-      max-width: 750px;
+
+@media screen and (max-width: 1007px) {
+  .header .hamburger {
+    display: block;
+    float: right;
+    position: absolute;
+    right: -155px;
+    top: -35px;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-right: 20px;
+    color: #e3a51e; }
+    .header .hamburger a i {
       display: flex;
       float: right;
-      position: absolute;
-      right: 5px;
-      top: -25px;
-      font-size: 30px;
       padding-top: 20px;
-      padding-right: 20px;
+      padding-right: 200px;
+      font-style: 32px;
       color: #e3a51e; }
-      .header .hamburger a i {
-        display: flex;
-        float: right;
-        padding-top: 20px;
-        padding-right: 200px;
-        font-style: 32px;
-        color: #e3a51e; }
-      .header .hamburger a:hover {
-        color: #e3a51e; }
-      .header .hamburger span i {
-        display: flex;
-        position: absolute;
-        right: 260px;
-        top: 40px; }
-      .header .hamburger span i:hover {
-        color: #e3a51e; } }
+    .header .hamburger a:hover {
+      color: #e3a51e; }
+    .header .hamburger span i {
+      display: flex;
+      position: absolute;
+      right: 260px;
+      top: 40px; }
+    .header .hamburger span i:hover {
+      color: #e3a51e; } }
 
 @media (min-width: 768px) {
   main .container {
@@ -920,6 +932,12 @@ main .seller .custom-container .custom-seller-row .seller-title {
 
 main .seller .custom-container .custom-seller-row .seller-banner a img {
   width: 100%; }
+
+@media (max-width: 1007px) {
+  main .seller .custom-container .custom-seller-row .seller-banner {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column; } }
 
 main .seller .custom-container .product-item2 {
   line-height: 1; }

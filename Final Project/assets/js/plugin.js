@@ -96,19 +96,18 @@ function sebet(id, img, title, price){
 			count : 1
 		})
 	}localStorage.setItem("items", JSON.stringify(items));
+	productList ();
 };
 
 function productList (){
 	const items = localStorage.getItem("items")
 	?JSON.parse(localStorage.getItem("items"))
 	:[];
-	const products = document.querySelector(".canvas-content");
+	const products = document.querySelector(".custom-ul");
 	document.querySelector('.notic').innerHTML=items.length;
 	if(items.length > 0){
 		items.forEach(item =>{
-			products.insertAdjacentHTML("afterbegin",  ` <div class="canvas-box">
-			<div class="canvas-item">
-				<ul class="custom-ul">
+			products.insertAdjacentHTML("afterbegin",  ` 
 					<li class="custom-li">
 						<div class="canvas-image">
 							<a href="product-details.html">
@@ -126,50 +125,8 @@ function productList (){
 						</div>
 						<button class="btn-xmark"> <i class="fa-solid fa-xmark"></i></button>
 					</li>
-					<li class="custom-li">
-						<div class="canvas-image">
-							<a href="product-details.html">
-								<img src="${item.item.img}" alt="">
-							</a>
-						</div>
-						<div class="canvas-img-title">
-							<h3 class="pro-text">
-								<a class="text" href="product-details.html">${item.item.title}</a>
-							</h3>
-							<p class="card-pro">
-								<span class="card-quantity">${item.count} <b>×</b></span>
-								<span class="card-price2">${item.item.price}</span>
-							</p>
-						</div>
-						<button class="btn-xmark"> <i class="fa-solid fa-xmark"></i></button>
-					</li>
-				</ul>
-			</div>
-			<div class="canvas-price-box">
-				<ul>
-					<li>
-						<span class="sub-total">sub-total</span>
-						<span class="sub-total"><b>$300.00</b></span>
-					</li>
-					<li>
-						<span class="sub-total">Eco Tax (-2.00)</span>
-						<span class="sub-total"><b>$10.00</b></span>
-					</li>
-					<li>
-						<span class="sub-total">VAT (20%)</span>
-						<span class="sub-total"><b>$60.00</b></span>
-					</li>
-					<li class="total">
-						<span class="total2">total</span>
-						<span class="total2"><b>$370.00</b></span>
-					</li>
-				</ul>
-			</div>
-			<div class="minicart-button">
-				<a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> view cart</a>
-				<a href="cart.html"><i class="fa-solid fa-share"></i> checkout</a>
-			</div>
-		</div>
+				
+				
 
 
 			

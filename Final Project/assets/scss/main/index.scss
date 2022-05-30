@@ -130,6 +130,9 @@ html{
                 }
             }
         }
+        @media (max-width:1007px) {
+            display: none;
+        }
     }
     .header-second {                       
         .container {
@@ -326,9 +329,7 @@ html{
                                                     width: 250px;
                                                     opacity: 0;
                                                     visibility: hidden;
-                                                li{
-                                                    
-                                                }                                              
+                                                                                            
                                             }
                                         }
                                         li:hover .dropdown{
@@ -350,6 +351,9 @@ html{
                                     pointer-events: visible;
                                     z-index: 999;
                                     transition: 0.2s ease-in-out;
+                                }
+                                @media (max-width:1007px) {
+                                    display: none;
                                 }
                             }
                         }
@@ -567,6 +571,8 @@ html{
                                                                 padding-right: 30px;
                                                                 margin-right: -15px;
                                                                 .canvas-item{
+                                                                    overflow-y: scroll;
+                                                                    max-height: 350px;
                                                                     .custom-ul{
                                                                         .custom-li{
                                                                             display: flex;
@@ -657,8 +663,8 @@ html{
                                                                 }
                                                                 .canvas-price-box{                                                                
                                                                     padding-bottom: 20px;
-                                                                    margin-bottom: 20px;
-                                                                    padding-top: 15px;
+                                                                    margin-bottom: -25px;
+                                                                    padding-top: 27px;
                                                                     margin-left: -45px;
                                                                     ul{
                                                                         li{
@@ -771,9 +777,13 @@ html{
                                     visibility: visible;
                                     transform: none;
                                 }
+                                @media (max-width:1007px) {
+                                    display: none;
+                                }
                             }
                         }
                     }
+                    
                 }
             }                                  
         }
@@ -895,88 +905,52 @@ html{
                 }
             }
             position: relative;
-            @media screen and (max-width: 768px) {
-                .hamburger {
-                    max-width: 750px;
-                    display: flex;
-                    float: right;
-                    position: absolute;
-                    right: 5px;
-                    top: -25px;
-                    font-size: 30px;
-                    padding-top: 20px;
-                    padding-right: 20px;
-                    color: #e3a51e;
-                    a {
-                        i {
-                            display: flex;
-                            float: right;
-                            padding-top: 20px;
-                            padding-right: 200px;
-                            font-style: 32px;
-                            color: #e3a51e;
-                        }                        
-                    }
-                    a:hover {
-                        color: #e3a51e;
-                    }
-                    span {
-                        i {
-                            display: flex;
-                            position: absolute;
-                            right: 260px;
-                            top: 40px;
-                        }
-
-                        i:hover {
-                            color: #e3a51e;
-                        }
-                    }
-                }
-            }
+            
         }               
     }
-   
-}
-// @media screen and (min-width: 576px) {
-//     .custom-container {
-//       max-width: 540px;
-//     }
-//   }
-//   @media screen and (min-width: 768px) {
-//     .custom-container {
-//       max-width: 720px;
-//     }
-//   }
-//   @media screen and (min-width: 992px) {
-//     .custom-container {
-//       max-width: 960px;
-//     }
-//   }
-  
-//   @media screen and (min-width: 1200px) {
-//     .custom-container {
-//       max-width: 1200px;
-//     }
-//   }                         
+    @media screen and (max-width: 1007px) {
+        .hamburger {
+            display: block;
+            float: right;
+            position: absolute;
+            right: -155px;
+            top: -35px;
+            font-size: 30px;
+            padding-top: 20px;
+            padding-right: 20px;
+            color: #e3a51e;
+            a {
+                i {
+                    display: flex;
+                    float: right;
+                    padding-top: 20px;
+                    padding-right: 200px;
+                    font-style: 32px;
+                    color: #e3a51e;
+                }                        
+            }
+            a:hover {
+                color: #e3a51e;
+            }
+            span {
+                i {
+                    display: flex;
+                    position: absolute;
+                    right: 260px;
+                    top: 40px;
+                }
+    
+                i:hover {
+                    color: #e3a51e;
+                }
+            }
+        }
+    }
+}                         
 main {
     @media (min-width:768px){
         .container{
-            width: 100%;
-            .slider-text-title{
-            //    display: block;
-                h5{
-                //    display: block;
-                }
-                h1{
-                //    display: block;
-                }
-                p{
-                    // display: block;
-                }
-            }button{
-                // display: block;
-            }
+            width: 100%;                                                          
         }
     }
     .slider-area {       
@@ -1320,7 +1294,6 @@ main {
                     text-align: center;
                     h2 {
                         color: #333333;
-                        // font-size: 30px;
                         line-height: 1.2;
                         padding-bottom: 12px;
                         margin-top: 45px;
@@ -1339,8 +1312,13 @@ main {
                             width: 100%;
                         }
                     }
-                }
-            }
+                    @media(max-width:1007px) {
+                        max-width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }                
+            }            
 
             .product-item2 {
                 line-height: 1;
